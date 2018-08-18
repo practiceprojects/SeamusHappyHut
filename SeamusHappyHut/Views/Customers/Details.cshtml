@@ -1,0 +1,66 @@
+﻿@model SeamusHappyHut.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FaveDrink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FaveDrink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FaveMeal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FaveMeal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LargestBill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LargestBill)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
